@@ -1,0 +1,142 @@
+## This file is a template remove the .template to use the file
+
+libraries:                                      # This is called out once within the config.yml file
+  4K Movies:
+    metadata_path:
+      - file: config/IMDb-Top-250.yml
+      - file: config/Movies-4K-Overlays.yml
+      - file: config/Movies.yml
+      - file: config/Networks Movies.yml
+      - folder: config/4K Movies/
+  Movies:
+    metadata_path:
+      - file: config/IMDb-Top-250.yml
+      - file: config/Movies.yml
+      - file: config/Networks Movies.yml
+      - folder: config/Movies/
+  4K TV Shows:
+    metadata_path:
+      - file: config/TV-Shows-4K-Overlays.yml
+      - file: config/TV Shows.yml
+      - file: config/Networks TV.yml
+      - folder: config/4K TV Shows/
+  TV Shows:
+    metadata_path:
+      - file: config/TV Shows.yml
+      - file: config/Networks TV.yml
+      - folder: config/TV Shows/
+settings:
+  cache: true
+  cache_expiration: 60
+  asset_directory: config/assets
+  asset_folders: true
+  asset_depth: 0
+  create_asset_folders: false
+  dimensional_asset_rename: false
+  download_url_assets: false
+  show_missing_season_assets: false
+  show_missing_episode_assets: false
+  show_asset_not_needed: true
+  sync_mode: append
+  minimum_items: 10
+  default_collection_order:
+  delete_below_minimum: true
+  delete_not_scheduled: false
+  run_again_delay: 2
+  missing_only_released: false
+  only_filter_missing: false
+  show_unmanaged: true
+  show_filtered: false
+  show_options: false
+  show_missing: true
+  show_missing_assets: true
+  save_missing: true
+  tvdb_language: eng
+  ignore_ids:
+  ignore_imdb_ids:
+  item_refresh_delay: 0
+  verify_ssl: true
+  custom_repo:
+  playlist_sync_to_users: all
+webhooks:                                       # Can be individually specified per library as well
+  error:
+  version:
+  run_start:
+  run_end:
+  changes:
+plex:                                           # Can be individually specified per library as well; REQUIRED for the script to run
+  url: http://65.21.130.13:42411
+  token: hayqsMERJ1nzWJPQDZsz
+  timeout: 60
+  clean_bundles: false
+  empty_trash: false
+  optimize: false
+tmdb:                                           # REQUIRED for the script to run
+  apikey: dc4aee4bd0c71e5753eb920175842055
+  language: en
+  cache_expiration: 60
+  region:
+tautulli:                                       # Can be individually specified per library as well
+  url: http://192.168.1.12:8181
+  apikey:
+omdb:
+  apikey:
+  cache_expiration: 60
+mdblist:
+  apikey:
+  cache_expiration: 60
+notifiarr:
+  apikey:
+anidb:                                          # Not required for AniDB builders unless you want mature content
+  username:
+  password:
+  language: en
+radarr:                                         # Can be individually specified per library as well
+  url: http://192.168.1.12:7878
+  token:
+  add_missing: false
+  add_existing: false
+  root_folder_path: S:/Movies
+  monitor: true
+  availability: announced
+  quality_profile: HD-1080p
+  tag:
+  search: false
+  radarr_path:
+  plex_path:
+sonarr:                                         # Can be individually specified per library as well
+  url: http://192.168.1.12:8989
+  token:
+  add_missing: false
+  add_existing: false
+  root_folder_path: S:/TV Shows
+  monitor: all
+  quality_profile: HD-1080p
+  language_profile: English
+  series_type: standard
+  season_folder: true
+  tag:
+  search: false
+  cutoff_search: false
+  sonarr_path:
+  plex_path:
+trakt:
+  client_id: 8f01ba30911a611399d36345a7faef03fbf8c65251641502f457488dba4306a9
+  client_secret: 0b9b3eabcb8f28ad71d5d926db39ad6c6cdf133ada742d9d22dfcf506a13decb
+  pin:
+  authorization:
+    access_token: c76f2cb7bb60a91ec858f60ce802a318eff0d7958d50b9020236337fccb7a248
+    token_type: Bearer
+    expires_in: 7889237
+    refresh_token: e88b074d975489bc554a4978d058dfb7ba98aec193d2d7b6befef221f9126d18
+    scope: public
+    created_at: 1649227896
+mal:
+  client_id:
+  client_secret:
+  authorization:
+    # everything below is autofilled by the script
+    access_token:
+    token_type:
+    expires_in:
+    refresh_token:

@@ -1,0 +1,81 @@
+---
+collections:
+  Apple TV:
+    mdblist_list: https://mdblist.com/lists/yozoraxcii/appletv-movies
+    collection_order: custom
+    sort_title: "#03AppleTV"
+    sync_mode: sync
+    url_poster: https://theposterdb.com/api/assets/168823
+    visible_home: false
+    visible_shared: true
+    visible_library: true
+
+  Amazon:
+    mdblist_list: https://mdblist.com/lists/ryalism/amazon-movies
+    collection_order: custom
+    sort_title: "#04Amazon"
+    sync_mode: sync
+    url_poster: https://theposterdb.com/api/assets/168830
+    visible_home: false
+    visible_shared: true
+    visible_library: true
+
+  Disney+:
+    mdblist_list: https://mdblist.com/lists/ryalism/disney-movies
+    collection_order: custom
+    sort_title: "#05Disney+"
+    sync_mode: sync
+    url_poster: https://theposterdb.com/api/assets/168824
+    visible_home: false
+    visible_shared: true
+    visible_library: true
+
+  HBO Max:
+    mdblist_list: https://mdblist.com/lists/ryalism/hbo-max-movies
+    collection_order: custom
+    sort_title: "#06HBOMax"
+    sync_mode: sync
+    url_poster: https://theposterdb.com/api/assets/168825
+    visible_home: false
+    visible_shared: true
+    visible_library: true
+
+  Hulu:
+    mdblist_list: https://mdblist.com/lists/ryalism/hulu-movies
+    collection_order: custom
+    sort_title: "#07Hulu"
+    sync_mode: sync
+    url_poster: https://theposterdb.com/api/assets/168826
+    visible_home: false
+    visible_shared: true
+    visible_library: true
+
+  Netflix:
+    mdblist_list: https://mdblist.com/lists/ryalism/netflix-movies
+    collection_order: custom
+    sort_title: "#09Netflix"
+    sync_mode: sync
+    url_poster: https://theposterdb.com/api/assets/168827
+    visible_home: false
+    visible_shared: true
+    visible_library: true
+
+  Paramount:
+    mdblist_list: https://mdblist.com/lists/yozoraxcii/paramount-movies
+    collection_order: custom
+    sort_title: "#10Paramount"
+    sync_mode: sync
+    url_poster: https://theposterdb.com/api/assets/168828
+    visible_home: false
+    visible_shared: true
+    visible_library: true
+
+  Peacock:
+    mdblist_list: https://mdblist.com/lists/yozoraxcii/peacock-movies
+    collection_order: custom
+    sort_title: "#11Peacock"
+    sync_mode: sync
+    url_poster: https://theposterdb.com/api/assets/168829
+    visible_home: false
+    visible_shared: true
+    visible_library: true

@@ -1,0 +1,37 @@
+######################################################
+#                TV Show 4K Overlays                 #
+######################################################
+collections:
+  4K:
+    test: true
+    revert_overlay: false
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: false
+    filters:
+      filepath.not: IMAX
+    item_overlay: 4K
+    build_collection: false
+  4K-HDR:
+    test: true
+    revert_overlay: false
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    filters:
+      filepath.not: IMAX
+    item_overlay: 4K-HDR
+    build_collection: false
+  4K-HDR-IMAX:
+    test: true
+    revert_overlay: false
+    plex_search:
+      all:
+        resolution: 4K
+        hdr: true
+    filters:
+      filepath: IMAX
+    item_overlay: 4K-HDR-IMAX
+    build_collection: false
