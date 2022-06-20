@@ -1,12 +1,12 @@
 ---
 collections:
   Trending:
-    trakt_trending: 40
-    tmdb_trending_daily: 40
-    tmdb_trending_weekly: 40
-    sort_title: "#00Trending"
+    trakt_chart:
+      chart: trending
+      limit: 100
+    sort_title: "# 00 Trending"
+    collection_order: custom
     sync_mode: sync
-    smart_label: year.desc
     summary: Movies Trending across the internet
     url_background: https://i.imgur.com/SOVfrIq.png
     url_poster: https://i.imgur.com/4vpMZoA.png
@@ -14,29 +14,18 @@ collections:
     visible_shared: true
     visible_library: true
 
+
   Popular:
-    tmdb_popular: 40
-    imdb_list:
-      url: https://www.imdb.com/search/title/?title_type=feature,tv_movie,documentary,short
-      limit: 40
-    sort_title: "#01Popular"
+    trakt_chart:
+      chart: popular
+      time_period: weekly
+      limit: 100
+    sort_title: "# 01 Popular"
+    collection_order: custom
     sync_mode: sync
-    smart_label: year.desc
     summary: Popular Movies across the internet
     url_background: https://i.imgur.com/SOVfrIq.png
     url_poster: https://i.imgur.com/4cI2Jg4.png
     visible_home: false
     visible_shared: true
     visible_library: true
-
-  Best of 2021:
-    trakt_list: https://trakt.tv/users/hdlists/lists/2021-best-rated-movies-so-far
-    sync_mode: sync
-    smart_label: critic_rating.desc
-    sort_title: "#02BestOf2021"
-    summary: The Top Rated Movies of 2021 on RottenTomatoes.com
-    url_poster: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Posters/Charts/RT_21.JPG
-    url_background: https://i.imgur.com/trITIgI.jpg
-    radarr_add: false
-    radarr_search: true
-    radarr_monitor: true

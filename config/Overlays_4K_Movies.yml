@@ -1,0 +1,116 @@
+templates:
+
+  Resolution:
+    optional:
+      - overlay_level
+    default:
+      overlay: <<overlay_name>>
+      horizontal_offset: 15
+      horizontal_align: left
+      vertical_offset: 15
+      vertical_align: top
+    collection_level: <<overlay_level>>
+    overlay:
+      name: <<overlay_name>>
+      git: PMM/overlays/images/<<overlay>>
+      group: res
+      weight: <<weight>>
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+
+  4K-DV:
+    default:
+      use_4k: true
+      use_dv: true
+    allowed_library_types: <<use_4k>>, <<use_dv>>
+
+  4K-HDR:
+    default:
+      use_4k: true
+      use_hdr: true
+    allowed_library_types: <<use_4k>>, <<use_hdr>>
+
+  4K:
+    default:
+      use_4k: true
+    allowed_library_types: <<use_4k>>
+
+  Audience_Rating:
+    optional:
+      - overlay_level
+    default:
+      rating_type: audience_rating
+      horizontal_offset: 35
+      horizontal_align: right
+      vertical_offset: 40
+      vertical_align: bottom
+    collection_level: <<overlay_level>>
+    overlay:
+      name: text(<<rating_type>>)
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+      font: fonts/IBMPlexSans-Bold.ttf
+      font_size: 80
+      font_color: "#FFFFFF"
+
+  IMDB_Rating:
+    optional:
+      - overlay_level
+    collection_level: <<overlay_level>>
+    overlay:
+      name: IMDB_Rating
+      horizontal_offset: 15
+      horizontal_align: right
+      vertical_offset: 15
+      vertical_align: bottom
+
+overlays:
+  audience_rating:
+    template:
+      name: Audience_Rating
+    plex_search:
+      all:
+        audience_rating.gte: 0.1
+        audience_rating.lte: 9.9
+
+  rating:
+    template:
+      - name: IMDB_Rating
+    plex_search:
+      all:
+        audience_rating.gte: 0.1
+        audience_rating.lte: 9.9
+
+  4K-DV:
+    template:
+      - name: 4K-DV
+      - name: Resolution
+        weight: 120
+    plex_search:
+      all:
+        resolution.regex: '(?i)2160|4k'
+    filters:
+      has_dolby_vision: true
+
+  4K-HDR:
+    template:
+      - name: 4K-HDR
+      - name: Resolution
+        weight: 110
+    plex_search:
+      all:
+        resolution.regex: '(?i)2160|4k'
+        hdr: true
+
+  4K:
+    template:
+      - name: 4K
+      - name: Resolution
+        weight: 100
+    plex_search:
+      any:
+        resolution.regex: '(?i)2160|4k'

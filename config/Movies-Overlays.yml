@@ -1,9 +1,0 @@
-collections:
-  IMDB:
-    test: true
-    revert_overlay: false
-    plex_search:
-      all:
-       collection: IMDB Top 250
-    item_overlay: IMDB
-    build_collection: false

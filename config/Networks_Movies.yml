@@ -1,0 +1,81 @@
+---
+collections:
+  Apple TV:
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/appletv-movies
+    collection_order: custom
+    sort_title: "# AppleTV"
+    sync_mode: sync
+    url_poster: https://theposterdb.com/api/assets/168823
+    visible_home: false
+    visible_shared: true
+    visible_library: true
+
+  Amazon:
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/amazon-prime-video-movies
+    collection_order: custom
+    sort_title: "# Prime Video"
+    sync_mode: sync
+    url_poster: https://theposterdb.com/api/assets/168830
+    visible_home: false
+    visible_shared: true
+    visible_library: true
+
+  Disney+:
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/disney-movies
+    collection_order: custom
+    sort_title: "# Disney+"
+    sync_mode: sync
+    url_poster: https://theposterdb.com/api/assets/168824
+    visible_home: false
+    visible_shared: true
+    visible_library: true
+
+  HBO Max:
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/hbo-max-movies
+    collection_order: custom
+    sort_title: "# HBOMax"
+    sync_mode: sync
+    url_poster: https://theposterdb.com/api/assets/168825
+    visible_home: false
+    visible_shared: true
+    visible_library: true
+
+  Hulu:
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/hulu-movies
+    collection_order: custom
+    sort_title: "# Hulu"
+    sync_mode: sync
+    url_poster: https://theposterdb.com/api/assets/168826
+    visible_home: false
+    visible_shared: true
+    visible_library: true
+
+  Netflix:
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/netflix-movies
+    collection_order: custom
+    sort_title: "# Netflix"
+    sync_mode: sync
+    url_poster: https://theposterdb.com/api/assets/168827
+    visible_home: false
+    visible_shared: true
+    visible_library: true
+
+  Paramount:
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/paramount-movies
+    collection_order: custom
+    sort_title: "# Paramount"
+    sync_mode: sync
+    url_poster: https://theposterdb.com/api/assets/168828
+    visible_home: false
+    visible_shared: true
+    visible_library: true
+
+  Peacock:
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/peacock-movies
+    collection_order: custom
+    sort_title: "# Peacock"
+    sync_mode: sync
+    url_poster: https://theposterdb.com/api/assets/168829
+    visible_home: false
+    visible_shared: true
+    visible_library: true

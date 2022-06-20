@@ -1,0 +1,49 @@
+templates:
+
+  Audience_Rating:
+    optional:
+      - overlay_level
+    default:
+      rating_type: audience_rating
+      horizontal_offset: 35
+      horizontal_align: right
+      vertical_offset: 40
+      vertical_align: bottom
+    collection_level: <<overlay_level>>
+    overlay:
+      name: text(<<rating_type>>)
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+      font: fonts/IBMPlexSans-Bold.ttf
+      font_size: 80
+      font_color: "#FFFFFF"
+
+  IMDB_Rating:
+    optional:
+      - overlay_level
+    collection_level: <<overlay_level>>
+    overlay:
+      name: IMDB_Rating
+      horizontal_offset: 15
+      horizontal_align: right
+      vertical_offset: 15
+      vertical_align: bottom
+
+overlays:
+  audience_rating:
+    template:
+      name: Audience_Rating
+    plex_search:
+      all:
+        audience_rating.gte: 0.1
+        audience_rating.lte: 9.9
+
+  rating:
+    template:
+      - name: IMDB_Rating
+    plex_search:
+      all:
+        audience_rating.gte: 0.1
+        audience_rating.lte: 9.9
