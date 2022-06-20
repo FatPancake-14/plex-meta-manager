@@ -1,4 +1,4 @@
-templates:    
+templates:
 
   Resolution:
     optional:
@@ -53,10 +53,10 @@ templates:
       horizontal_align: <<horizontal_align>>
       vertical_offset: <<vertical_offset>>
       vertical_align: <<vertical_align>>
-      font: /root/Movio/Plex-Meta-Manager/fonts/IBMPlexSans-Bold.ttf
+      font: fonts/IBMPlexSans-Bold.ttf
       font_size: 80
       font_color: "#FFFFFF"
-  
+
   TMDB_Rating:
     optional:
       - overlay_level
@@ -68,7 +68,7 @@ templates:
       vertical_offset: 15
       vertical_align: bottom
 
-overlays:    
+overlays:
   audience_rating:
     template:
       name: Audience_Rating
@@ -76,7 +76,7 @@ overlays:
       all:
         audience_rating.gte: 0.1
         audience_rating.lte: 9.9
-    
+
   rating:
     template:
       - name: TMDB_Rating
